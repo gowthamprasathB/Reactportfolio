@@ -1,0 +1,72 @@
+.services__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.875rem;
+}
+
+.services__card {
+    text-align: center;
+    padding: 1.875rem;
+    border-radius: var(--border-radius);
+    background-color: var(--container-color);
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #ddd; /* Sample border style */
+}
+
+.services__card:hover {
+    transform: translateY(-10px);
+}
+
+.services__card:nth-child(1){
+    background-color: rgb(108, 108, 229);
+    box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.2);
+}
+
+.services__card:nth-child(2){
+    background-color: rgb(249, 215, 76);
+    box-shadow: 0px 5px 20px 0px rgba(249, 215, 76, 0.2);
+}
+
+.services__card:nth-child(3){
+    background-color: rgb(249, 123, 139);
+    box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.2);
+}
+.services__card:nth-child(4){
+    background-color: rgb(108, 229, 189);
+    box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.2);
+}
+
+.services__card:nth-child(5){
+    background-color: rgb(245, 180, 106);
+    box-shadow: 0px 5px 20px 0px rgba(249, 215, 76, 0.2);
+}
+
+.services__card:nth-child(6){
+    background-color: rgb(114, 177, 235);
+    box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.2);
+}
+
+.services__img{
+    margin-bottom: 1.25rem;
+    /* Adjust the size of the third image here */
+    width: 80px; /* Adjust based on your preference */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 40px;
+}
+
+.services__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.services__description{
+    color: #f8f9fa;
+}
+
+.services__card:nth-child(2) .services__title,
+.services__card:nth-child(2) .services__description{
+    color: var(--title-color);
+}
